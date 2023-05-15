@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@400;500;600&display=swap");
+/* Root */
+:root {
+  --transition: all 0.3s linear;
+  --font-family: "Kumbh Sans", sans-serif;
+  --background-primary: #005a9b;
+  --background-white: #fff;
+  --font-color-primary: #005a9b;
+  --font-white: #fff;
+  --font-color-secondary: #414141;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* General Stylings******************************** */
+body {
+  font-family: var(--font-family);
+}
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--font-color-primary);
+}
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.btn-dark {
+  width: 168px;
+  height: 50px;
+  background: var(--background-primary);
+  color: var(--font-white);
+}
+
+.btn-light {
+  background: var(--background-primary);
+  color: var(--font-white);
+  width: 150px;
+  height: 50px;
+}
+/* Container*************************************** */
+.container {
+  max-width: 1500px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Pricing Header*********************************** */
+header .logo {
+  display: flex;
+  justify-content: space-between;
+  gap: 7rem;
+  align-items: center;
+  font-weight: 600;
+  width: 100%;
+}
+header .logo h1 {
+  color: var(--font-color-secondary);
+  font-size: 25px;
+}
+header .logo .menu-bar {
+  cursor: pointer;
+}
+header .nav {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+header .nav.show-links {
+  height: 10rem;
+  margin-top: 3%;
+}
+
+header .nav ul li {
+  list-style: none;
+}
+header .sign-in {
+  display: none;
+}
+header .sign-in a {
+  display: block;
+  font-size: 16px;
+  padding-top: 5rem;
+  transition: var(--transition);
+}
+
+/* Pricing Card Section************************************** */
+#price-cards .price-cards .pricing-header h2 {
+  font-size: 30px;
+  color: var(--font-color-secondary);
+}
+#price-cards .price-cards .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+#price-cards .price-cards .cards .card {
+  width: 350px;
+  color: var(--font-color-primary);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+#price-cards .price-cards .cards .card .card-img h3 {
+  font-size: 25px;
+  font-style: normal;
+  line-height: 64px;
+  color: var(--font-color-secondary);
+}
+#price-cards .price-cards .cards .card .card-img img {
+  width: 100%;
+}
+#price-cards .price-cards .cards .card .slide-btn {
+  display: none;
+}
+#price-cards .price-cards .cards .card .card-content {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#price-cards .price-cards .cards .card .card-content h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+}
+#price-cards .price-cards .cards .card .card-content .pricing-info .status,
+#price-cards
+  .price-cards
+  .cards
+  .card
+  .card-content
+  .pricing-info
+  .payment-status,
+#price-cards .price-cards .cards .card .card-content .pricing-info .capacity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#price-cards .price-cards .cards .card .card-content .pricing-info h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* Footer Section************************************************ */
+footer {
+  margin: 10px auto;
+  width: 90vw;
+  height: 5vh;
+  background: var(--background-primary);
+  color: var(--font-white);
+  text-align: center;
+}
+footer p {
+  padding: 10px 0 0 0;
+}
+
+/* Media query**************************************************************8 */
+/* 1000px min-width */
+@media screen and (min-width: 1000px) {
+  /* Header Section******************************************* */
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+  }
+  header .logo {
+    gap: 0;
+    width: 250px;
+  }
+  header .logo h1 {
+    font-size: 40px;
+  }
+  header .logo .menu-bar {
+    display: none;
+  }
+  header .nav {
+    height: auto;
+  }
+
+  header .nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  header .sign-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  header .sign-in a {
+    padding-top: 0;
+    transition: none;
+  }
+
+  /* Pricing Section*************************************** */
+  #price-cards .price-cards .pricing-header {
+    padding-left: 30px;
+  }
+  #price-cards .price-cards .pricing-header h2 {
+    font-size: 35px;
+  }
+  #price-cards .price-cards .cards {
+    gap: 5rem;
+  }
+  #price-cards .price-cards .cards .card {
+    padding-left: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  #price-cards .price-cards .cards .card .card-img img {
+    width: 80%;
+  }
+  #price-cards .price-cards .cards .card .card-content .pricing-info .status,
+  #price-cards
+    .price-cards
+    .cards
+    .card
+    .card-content
+    .pricing-info
+    .payment-status,
+  #price-cards .price-cards .cards .card .card-content .pricing-info .capacity {
+    width: 250px;
+  }
+  #price-cards .price-cards .cards .card .card-img h3 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  #price-cards .price-cards .cards .card .card-content h2 {
+    font-size: 35px;
+  }
+  #price-cards .price-cards .cards .card .card-content {
+    width: 50%;
+  }
+  #price-cards .price-cards .cards .card .slide-btn {
+    display: block;
+    width: 50px;
+    margin-right: 5%;
+  }
+
+  /* Footer Section************************************************ */
+  footer {
+    width: 98vw;
+  }
+  footer p {
+    padding: 5px 0 0 0;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .price-cards {
+    max-width: 1330px;
+  }
+}
