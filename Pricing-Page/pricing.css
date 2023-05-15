@@ -32,7 +32,6 @@ a {
   border-radius: 8px;
   font-size: 16px;
   text-align: center;
-  
 }
 .btn-dark {
   width: 168px;
@@ -46,6 +45,9 @@ a {
   color: var(--font-white);
   width: 150px;
   height: 50px;
+}
+.btn-register {
+  color: var(--font-white);
 }
 /* Container*************************************** */
 .container {
@@ -61,7 +63,7 @@ header .logo {
   gap: 7rem;
   align-items: center;
   font-weight: 600;
-  width: 100%;
+  width: 50%;
 }
 header .logo h1 {
   color: var(--font-color-secondary);
@@ -76,7 +78,7 @@ header .nav {
   transition: var(--transition);
 }
 header .nav.show-links {
-  height: 10rem;
+  height: 3rem;
   margin-top: 3%;
 }
 
@@ -181,8 +183,7 @@ footer p {
     width: 100vw;
   }
   header .logo {
-    gap: 0;
-    width: 250px;
+    gap: 0rem;
   }
   header .logo h1 {
     font-size: 40px;
@@ -269,5 +270,14 @@ footer p {
 @media screen and (min-width: 1400px) {
   .price-cards {
     max-width: 1330px;
+  }
+  header .logo {
+    width: 50%;
+  }
+  header .nav {
+    width: 20%;
+  }
+  header .sign-in {
+    width: 25%;
   }
 }
