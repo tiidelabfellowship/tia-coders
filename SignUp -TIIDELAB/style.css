@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Lato:wght@300&family=League+Gothic&family=Lora&family=Montserrat:wght@400;500;600&family=Patua+One&family=Poppins&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+}
+span {
+  color: #005a9b;
+}
+header h1 {
+  padding-left: 50px;
+  padding-top: 10px;
+  font-family: "Patua One";
+  font-weight: 700;
+  font-size: 32px;
+  color: #005a9b;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 20px;
+}
+#signup {
+  margin: 5% auto 0 auto;
+}
+#signup .signup {
+  width: 85vw;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3% auto 0 auto;
+  animation: slideInFromBottom 1s ease-in;
+}
+
+/* Form Section *******************************************888*/
+#signup .signup .form-header h1 {
+  font-family: "Patua One";
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  color: #333333;
+  padding-bottom: 3%;
+}
+#signup .signup .form-container {
+  font-family: "Kumbh Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 20px;
+}
+
+#signup .signup .form-container input {
+  outline: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 16px 24px;
+  width: 546px;
+  height: 64px;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(51, 51, 51, 0.6);
+}
+
+#signup .signup .password {
+  margin-top: 2%;
+}
+#signup .signup .btn button {
+  width: 546px;
+  height: 64px;
+  outline: none;
+  border: none;
+  background: #005a9b;
+  border-radius: 8px;
+  font-family: "Kumbh Sans";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  cursor: pointer;
+}
+#signup .signup .input-btn input:hover {
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+
+/* Password section************************************** */
+.password {
+  position: relative;
+}
+.password i {
+  position: absolute;
+  right: 5%;
+  top: 35%;
+  cursor: pointer;
+}
+.login {
+  text-align: center;
+}
+.agreement {
+  width: 500px;
+  padding: 0 20px;
+}
+
+/* Key Frames ******************************************** */
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Media Queries ******************************************** */
+
+@media (max-width: 700px) {
+  #signup .signup .form-container input {
+    width: 400px;
+  }
+  #signup .signup .btn button {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header h1 {
+    padding: 20px;
+    font-size: 40px;
+  }
+  #signup .signup {
+    margin: 10% auto 0 auto;
+    animation: slideInFromBottom 1s ease-in;
+    box-shadow: none;
+  }
+  #signup .signup .form-container input {
+    padding: 16px 20px;
+    width: 280px;
+    height: 60px;
+    font-size: 16px;
+  }
+  #signup .signup .btn button {
+    width: 280px;
+    height: 60px;
+    font-size: 16px;
+  }
+  .agreement {
+    width: 300px;
+  }
+}
