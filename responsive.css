@@ -1,0 +1,219 @@
+/* RESPONSIVE*/
+
+/* Nav Bar Section */
+
+/*Max-width of 1024px*/
+@media (max-width: 1024px) {
+.bookmyevent-logo {
+    left: 48px;
+    font-weight: 500;
+}
+
+/*MENU*/
+
+.menu {
+    width: 600px;
+}
+
+.menu ul {
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 300px;
+  gap: 10px;
+}
+
+/*MENU BUTTON*/
+
+.signin-btn button{
+    width: 138px;
+    height: 40px;
+}
+
+.register-btn button{
+    width: 138px;
+    height: 46px;
+}
+
+.hero-content {
+    padding: 130px 150px;
+}
+}
+
+
+
+/*==================*/
+/*Max-width of 900px*/
+
+@media (max-width: 900px) {
+
+/*MENU*/
+
+.menu {
+    width: 600px;
+}
+
+.menu ul {
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 300px;
+  gap: 10px;
+}
+
+/*MENU BUTTON*/
+
+.signin-btn button{
+    width: 110px;
+    height: 35px;
+    font-size: 14px;
+}
+
+.register-btn button{
+    width: 110px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+/*hero-btn*/
+.hero-content {
+    padding: 120px 140px;
+}
+
+.content h2 {
+    font-size: 35px;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+
+/*section-btn*/
+
+.book-btn button{ 
+    width: 125px;
+    height: 40px;
+    font-size: 14px;
+}
+
+.book-btn a{
+    font-size: 14px;
+}
+
+.rsvp-btn button{ 
+    width: 125px;
+    height: 40px;
+    font-size: 14px;
+}
+
+.rsvp-btn a{
+    font-size: 14px;
+}
+}
+
+/*==================*/
+/*Max-width of 768px*/
+
+
+@media (max-width: 768px) {
+    .header {
+        height: 70px;
+        width: 100%;
+    }
+
+    .bookmyevent-logo h2 {
+        font-weight: 400;
+        font-size: 18px;
+    }
+    
+    /*MENU*/
+    
+    .menu {
+        width: 700px;
+    }
+    
+    .menu ul {
+      font-weight: 500;
+      padding-left: 200px;
+      gap: 8px;
+    }
+    
+    /*MENU BUTTON*/
+    
+    .signin-btn button{
+        width: 130px;
+        height: 40px;
+    }
+    
+    .register-btn button{
+        width: 130px;
+        height: 40px;
+    }
+    
+    .hero-content {
+        padding: 130px 150px;
+    }
+
+}
+
+
+/*Max-width of 425px*/
+
+@media (max-width: 425px) {
+
+    .header {
+        width: 100%;
+    }
+    .bookmyevent-logo {
+        left: 20px;
+    }
+
+    .menu {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-right: 0;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .menu-btn {
+
+    }
+
+
+
+
+    /*hero section*/
+    .hero-content {
+    padding: 80px 70px;
+}
+
+.content h2 {
+    line-height: 60px;
+}
+
+.content p {
+    font-size: 16px;
+}
+
+.toggle button {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    background: transparent;
+    border: none;
+}
+}
+
+
+/*Max-width of 375px*/
+@media (max-width: 375px) {
+      .hero-content {
+    padding: 50px 50px;
+} 
+}

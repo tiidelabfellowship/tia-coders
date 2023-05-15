@@ -1,0 +1,125 @@
+/* Reset default margins, padding, and box model for all elements */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Define navigation bar logo styling */
+.nav__logo {
+	font-family: 'Kumbh Sans', sans-serif;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 40px;
+	color: #005A9B;
+	margin-left: 48px;
+	margin-top: 40px;
+}
+/* Define navigation bar logo styling for mobile view */
+@media screen and (max-width:600px) {
+	.nav__logo {
+		margin: 20px auto;
+		text-align: center;
+}
+}
+/* Define sign in form container styling */
+.signIn__container {
+		margin: 0 auto;
+		max-width: 500px;
+}
+/* Define sign in form container styling for mobile view */
+@media screen and (max-width:600px) {
+	.signIn__container {
+		margin: 0 auto;
+	    max-width: 300px;
+	}
+}
+/* Define sign in form title styling */
+.signIn__title {
+	font-family: 'Patua One', cursive;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 39px;
+	text-align: center;
+	color: #414141;
+	margin-top: 80px;
+	margin-bottom: 56px;
+}
+/* Define sign in form styling */
+.signIn__form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 500px;
+}
+/* Define input field styling */
+input {
+	align-items: center;
+	padding: 16px 24px;
+	border-radius: 8px;
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	width: 100%;
+	/* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+.email__input {
+	margin-bottom: 30px;
+}
+
+.password__input {
+	margin-bottom: 5px;
+}
+
+.email__input::placeholder,
+.password__input::placeholder {
+	font-family: 'Kumbh Sans', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	color: rgba(51, 51, 51, 0.4);
+}
+
+.submit__input {
+	background-color: #005A9B;
+	color: #fff;
+	border: none;
+	padding: 20px 40px;
+	border-radius: 8px;
+	font-family: 'Kumbh Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 22px;
+	cursor: pointer;
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 48px;
+}
+
+.form__text1 {
+	margin-left: auto;
+	font-family: 'Kumbh Sans', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	color: #414141;
+	text-decoration: none;
+}
+.form__text1:hover {
+	text-decoration: underline;
+}
+.form__text2 {
+	margin: 0 auto;
+	font-family: 'Kumbh Sans';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	color: #414141;
+	text-align: center;
+	
+}
+.sign__up {
+	color: #005A9B;
+}
+.sign__up:hover {
+	text-decoration: underline;
+}

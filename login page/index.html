@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Define document metadata and set page title -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign In Page</title>
+	<!-- Load external fonts and stylesheets -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500;700&family=Patua+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<!-- Define navigation bar with logo -->
+			<h2 class="nav__logo">BookMyEvent</h2>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<div class="signIn__container">
+				<!-- Define sign in form with email and password input fields -->
+				<form class="signIn__form">
+					<h2 class="signIn__title">Login</h2>
+					<input class="email__input" type="email" id="email" name="email" placeholder="Email Address" required>
+						<input type="password" id="password" name="password" placeholder="Password" class="password__input" required>
+					<a class="form__text1" href="#">Forgot Password?</a>
+					<input class="submit__input" type="submit" value="Login">
+					<footer>
+						<h4 class="form__text2">Don't have an account?<span class="sign__up"><a href="/SignUp/signup.html" class="click">Sign up</a> </span>
+						</h4>
+						
+					</footer>
+					
+				</form>
+			</div>
+			
+		</section>
+	</main>
+</body>
+</html>
