@@ -1,0 +1,190 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.all-container{
+  padding: 0 5rem;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+header {
+  background-color: #ffffff;
+  color: #005A9B;
+  padding: 1rem 0;
+}
+
+#branding h1 {
+
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  width: 269px;
+  height: 64px;
+  line-height: 64px;
+  
+}
+
+/* Form styles */
+section {
+  margin-top: 0.5rem;
+}
+
+.Fill-booking {
+  text-align: left;
+  padding: 1rem 0;
+}
+.Fill-booking h3{
+  width: 660px;
+  height: 56px;
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  
+  color: #000000;
+
+}
+.Fill-booking h2 {
+  font-size: 32px;
+  font-weight: 600;
+  
+}
+
+.form-container {
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+ .test{
+  display: flex;
+  /* width: 100%; */
+  
+ }
+
+.run{
+  display: inline-block;
+  width: 48.5%;
+}
+.form-container3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+.twin-run {
+  width: 49.3%;
+  margin-right: 0.5rem;
+  padding-right: 0.5rem;
+}
+.form-container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+} 
+
+/* .fat{
+  display: flex;
+  width: 100%;
+} */
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select {
+  width: 100%;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+}
+
+/* #Service{
+  padding-right: 3rem;
+} */
+
+
+#submit {
+  background-color: #005A9B;
+  color: #fff;
+  display: flex;
+  width: 98%;
+  text-align: center;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition:  1.5s ease-in-out;
+}
+
+#reset { 
+  background-color: #ffffff;
+  color: #005A9B;
+  display: flex;
+  width: 98%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: skyblue;
+}
+
+.button{
+  display: flex;
+  width: 100%;
+  
+}
+
+.button button{
+  margin-right: 1rem;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  align-content: center;
+  padding-left: 15rem;
+}
+
+.test input, .run input, .test select {
+  padding-left: 1rem;
+  margin-right: 1rem;
+ }
+.run select{
+  margin-right: 5rem;
+}
+ .run input{
+  padding-left: 1rem;
+ }
+
+/* Styles for screens smaller than 768px */
+@media (max-width: 767px) {
+  /* Add your styles here */
+  .all-container{
+    padding: 0 1rem;
+  }
+
+  .button button{
+    
+    padding-left: 3rem;
+  
+  }
+  
+}
+
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="DevOpie">
+    <title>Book an Event</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="all-container">
+            <header>
+                <div class="container">
+                    <div id="branding">
+                        <h1>Book an Event</h1>
+                    </div>
+                </div>
+            </header>
+            <section>
+                <div class="Fill-booking">
+                    <h3>Fill in your details to make your bookings</hi>
+                </div>
+                <div class="form-container">
+                    <form>
+                        <h2>Contact Details</h2>
+                        <div class="test">
+                            <input type="text" id="name" name="Name" placeholder="Full Name" required>
+                            <input type="text" id="name" name="Email" placeholder="Email" required>
+                        </div>
+
+                        <div class="run">
+                            <input type="text" id="name" name="Phone Number" placeholder="Phone number" required>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="form-container">
+                    <form>
+                        <h2>Event Details</h2>
+                        <div class="test">
+                            <input type="text" id="name" name="Name" placeholder="Event Title" required>
+                            <select name="Event Detail" id="Event Type" required>
+                                <option value="Type">Type</option>
+                                <option value="Seminar">Seminar</option>
+                                <option value="Convention">Convention</option>
+                                <option value="Wedding">Wedding</option>
+                                <option value="Conference">Conference</option>
+                                <option value="Dinner">Dinner</option>
+                                <option value="Virtual Event">Virtual Event</option>
+                                <option value="Exhibition">Exhibition</option>
+                              </select>
+                        </div>
+
+                        <div class="test">
+                            <input type="text" id="name" name="request" placeholder="Special request" required>
+                            <input type="number" id="name" name="Number" placeholder="Number of attendees" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-container">
+                    <form>
+                        <h2>Location Info</h2>
+                        <div class="run">
+                            <select name="Location Info" id="Location" required>
+                                <option value="Choose Location">Choose Location</option>
+                                <option value="Location 1">Location 1</option>
+                                <option value="Location 2">Location 2</option>
+                                <option value="Location 3">Location 3</option>
+                                <option value="Location 4">Location 4</option>
+                              </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-container">
+                    <form>
+                        <h2>Equipment & Services</h2>
+                        <div class="form-container3">
+                            <div class="twin-run">
+                                <select name="Equipments & Services" class="twin-equip" id="equipment" required>
+                                    <option value="Choose your required equipments">Choose your required equipments</option>
+                                    <option value="Equipment 1">Equipment 1</option>
+                                    <option value="Equipment 2">Equipment 2</option>
+                                    <option value="Equipment 3">Equipment 3</option>
+                                    <option value="Equipment 4">Equipment 4 </option>
+                                </select>
+                            </div>
+                            
+                            <div class="twin-run">
+                                <select name="Equipments & Services" class="twin-service" id="Service" required>
+                                    <option value="Choose your required equipments">Choose your required Service</option>
+                                    <option value="Service 1">Service 1</option>
+                                    <option value="Service 2">Service 2</option>
+                                    <option value="Service 3">Service 3</option>
+                                    <option value="Service 4">Service 4 </option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-container">
+                    <form>
+                        <h2>Date & Time</h2>
+                        <div class="test">
+                            <input
+                            placeholder="Starting Date"
+                                class="textbox-n"
+                                type="text"
+                                onfocus="(this.type='date')"
+                                id="date" required />
+
+                                <input
+                                placeholder="Ending Date"
+                                class="textbox-n"
+                                type="text"
+                                onfocus="(this.type='date')"
+                                id="date" required />
+                        </div>
+
+                        <div class="test">
+
+                            <input
+                            placeholder="Starting Time"
+                                class="textbox-n"
+                                type="text"
+                                onfocus="(this.type='time')"
+                                id="time" required/>
+
+                                <input
+                                placeholder="Ending Time"
+                                class="textbox-n"
+                                type="text"
+                                onfocus="(this.type='time')"
+                                id="time" required/>
+                        </div>
+
+                        <div class="run">
+                            
+                            <select name="Time Zone" id="Time Zone" required>
+                                <option value="Choose your Time Zone">Choose your Time Zone</option>
+                                <option value="Central African Time GMT-1:00">Central African Time GMT-1:00</option>
+                                <option value="European Central Time GMT+1:00">European Central Time GMT+1:00</option>
+                                <option value="Eastern European Time GMT+2:00">Eastern European Time GMT+2:00</option>
+                                <option value="Eastern African Time GMT+3:00">Eastern African Time GMT+3:00</option>
+                            </select>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <div class="button"> 
+                            <button id="reset">Cancel</button>
+                            <button id="submit">Create Event</button>
+                        </div>
+                       
+                    </form>
+                </div>
+            </section>
+    </div>        
+
+    <!-- <script>
+    // Select the body element
+    const body = document.querySelector('body');
+
+    // Add event listener for window resize
+    window.addEventListener('resize', () => {
+    // Get the viewport width
+    const viewportWidth = window.innerWidth;
+
+    // Change the background color based on viewport width
+    if (viewportWidth < 576) {
+        body.style.backgroundColor = 'lightblue';
+    } else if (viewportWidth >= 576 && viewportWidth < 992) {
+        body.style.backgroundColor = 'lightgreen';
+    } else {
+        body.style.backgroundColor = 'lightgrey';
+    }
+    });
+    </script> -->
+</body>
+</html>
