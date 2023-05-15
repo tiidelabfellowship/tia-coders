@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600&family=Patua+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F5F5F5;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* NAV BAR */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background: #FFFFFF;
+    padding: 10px;
+    /* position: fixed; */
+    z-index: 1;
+    height: 120px;
+}
+
+.bookmyevent-logo {
+    position: absolute;
+    font-style: normal;
+    left: 48px;
+    font-weight: 600;
+    color: #414141;
+}
+
+
+.menu {
+    width: 700px;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  justify-content: space-between;
+  padding-left: 350px;
+  display: flex;
+    gap: 8px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #005A9B;
+}
+
+/*MENU BUTTON*/
+
+.menu-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+}
+
+.signin-btn button{
+    background: none;
+    border: none;
+    text-decoration: none;
+    background-color: none;
+    font-size: 16px;
+    width: 168px;
+    height: 56px;
+    cursor: pointer;
+}
+
+.signin-btn a {
+    text-decoration: none;
+    color: #005A9B;
+    font-style: normal;
+}
+
+.register-btn button {
+    width: 168px;
+    height: 56px;
+    background: #005A9B;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.register-btn a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*CONTENT*/
+
+.hero-content {
+    background-image: url(./Image/background-img.png);
+    height: 853px;
+    text-align: center;
+    padding: 130px 268px;
+}
+
+.content h2 {
+    font-family: 'Patua One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 70px;
+    color: #414141;
+}
+
+.content h2 span {
+    color: #005A9B;
+}
+
+.content p {
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 15px;
+}
+
+
+/*section-btn*/
+
+.section-btn {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.book-btn button{
+    width: 168px;
+    height: 56px;
+    background: none;
+    border: 2px solid #005A9B;
+    border-radius: 8px;
+}
+
+.book-btn a{
+    text-decoration: none;
+    color: #005A9B;
+    font-size: 16px;
+}
+
+.rsvp-btn button{
+    width: 168px;
+    height: 56px;
+    background: #005A9B;
+    border-radius: 8px;
+    border: none;
+}
+
+.rsvp-btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
