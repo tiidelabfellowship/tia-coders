@@ -31,7 +31,18 @@ body {
     width: 451px;
 }
 
-.contact-info h2 {
+#contact h2 {
+    font-family: 'Patua One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 49px;
+    text-align: center;
+    color: #414141;
+    margin-bottom: 1.8rem;
+}
+
+.contact-info h3 {
     font-family: 'Patua One', cursive;
     color: #414141;
     font-size: 53.1px;
@@ -119,6 +130,11 @@ form .btn {
 }
 
 @media (max-width: 768px) and (min-width: 200px) {
+    #contact h2 {
+        margin-bottom: auto;
+        font-size: 34px;
+    }
+    
     #contact img {
         display: block;
         width: 100%;
@@ -138,7 +154,7 @@ form .btn {
         width: 85vw;
     }
 
-    .contact-fact h2 {
+    .contact-fact h3 {
         font-size: 40px;
         font-weight: 400;
         line-height: 2.8rem;
@@ -185,6 +201,9 @@ form .btn {
 }
 
 @media (max-width:550px) and (min-width:185px) {
+    #contact h2 {
+        margin-bottom: auto;
+    }
     .btn {
         padding: 10px 20px;
         position: relative;
