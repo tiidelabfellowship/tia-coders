@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600&family=Patua+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    /* background: yellow; */
+}
+
+/* Section- ticket */
+.ticket-section {
+    width: auto;
+    display: flex;
+    padding:50px 74px;
+}
+
+.section-left {
+    display: flex;
+    width: 235px;
+    /* background-color:aqua; */
+    padding:30px;
+}
+
+.save {
+    align-self:self-end;
+    text-align: left;
+    padding-right: 0px ;
+   width: 235px;
+   /* background-color: red; */
+}
+
+.save img {
+    padding-left: 5px;
+   width: 15;
+   height: 20px;
+   justify-self: center;
+}
+
+/* TICKET SECTION */
+
+.section-right {
+    /* padding: 40px; */
+    text-align: center;
+    width: 595px;
+    /* height: 842px; */
+    color: white;
+    background: #005A9B;
+}
+
+/* icon-top */
+
+.shape-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.shape1 {
+	top: 0;
+    padding: 0;
+}
+
+.ticket-code p{
+    padding-top: 30px;
+    font-weight: 300px;
+}
+
+
+/* TICKET DETAILS */
+
+
+.company-details h4 {
+    padding: 20px;
+}
+
+.company-details p {
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+
+.company-details img{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+/* event name */
+
+.event-name {
+    line-height: 40px;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+
+/* event-details */
+
+
+.event-all {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    padding: 10px 200px 10px 210px;
+}
+
+.event-all p {
+    padding-left: 15px;
+}
+
+
+/* call info */
+
+.call-info {
+    padding: 30px 0;
+    line-height: 15px;
+}
+
+
+/* icon-bottom */
+
+
+.shape-icon-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.shape-bottom {
+    
+	bottom: 0;
+    padding: 0;
+}
+
+
+/* footer-copyright */
+
+.copyright {
+ background: #005A9B;
+ color: white;
+ text-align: center;
+ height: 40px;
+ padding-top: 10px;
+ font-size: 14px;
+}
+
+
+/* MEDIA QUARRIES */
+
+/* max-width of 768px */
+@media (max-width: 768px) {
+    .section-left {
+        width: 150px;
+        padding:10px;
+    }
+    .ticket-section {
+        padding:50px 40px;
+    }
+
+    .section-right {
+        width: 500px;
+    }
+
+    .event-all {
+        padding: 10px 160px;
+    }
+}
+
+/* max-width of 425px */
+@media (max-width: 425px) {
+    .ticket-section {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        padding:20px 15px;
+    }
+
+    .section-left {
+        display: flex;
+        flex-direction: row;
+        width:100%;
+}
+
+.shape-icon img {
+    width: 70px;
+    height: 70px;
+}
+
+.shape-bottom img {
+    width: 50px;
+    height: 50px;
+}
+
+.save {
+   justify-content: space-around;
+   padding-left: 250px;
+}
+
+.section-right {
+    width: 400px;
+}
+.event-all {
+    padding: 10px 100px;
+}
+
+.call-info {
+    padding: 30px 0;
+    line-height: 25px;
+}
+
+}
+
+
+/* max-width of 320px */
+@media (max-width: 320px) {
+    .section-right {
+        width: 290px;
+    }
+
+    .shape-icon img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .shape-bottom img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .save {
+        padding-left: 160px;
+     }
+
+     .event-all {
+        padding: 10px 50px;
+    }
+     
+
+
+}
