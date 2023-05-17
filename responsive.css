@@ -162,7 +162,7 @@
 @media (max-width: 425px) {
 
     .header {
-        width: 370px;
+        width: 390px;
     }
 
     .bookmyevent-logo {
@@ -171,7 +171,7 @@
     }
 
     .menu {
-      width: 350px;
+      width: 420px;
       display: flex;
       flex-direction: column;
       margin-right: 0;
@@ -193,7 +193,7 @@
         font-size: 14px;
         width: 80px;
         height: 36px;
-        padding-right: 30px;
+        padding-right: 10px;
     }
 
     /* register-btn */
@@ -208,7 +208,7 @@
     /*hero section*/
     .hero-content {
     padding: 30px 10px;
-    width: 350px;
+    width: 420px;
    
 }
 
