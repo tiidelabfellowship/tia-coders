@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600&family=Patua+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 0 118px;
+}
+
+/* bookmyevent logo */
+
+.nav-section {
+    width: 100%;
+}
+
+.logo-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 64px 0px;
+    color: #005A9B;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* icon and terms section */
+
+.terms {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.terms-icon img{
+    width: 85px;
+    height: 74px;
+    color: #005A9B;
+}
+
+.terms h2 {
+    padding-top: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #005A9B;
+}
+
+/*content section*/
+
+.content p{
+    font-family: Kumbh Sans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 30px 0;
+}
+
+.content h3{
+    padding: 20px 0;
+    text-align: center;
+    color: #005A9B; 
+    font-weight: 300px;
+    letter-spacing: 1px;
+}
+
+
+/* MEDIA QUARRY */
+
+/*==================*/
+/*Max-width of 768px*/
+@media (max-width: 768px) {
+    body {
+        padding: 0 40px;
+        width: 100%;
+    }
+}
+
+    /*==================*/
+/*Max-width of 425px*/
+@media (max-width: 425px) {
+
+    .content p{
+        font-size: 14px;
+    }
+
+    .content h3 {
+        line-height: 35px;
+        width: 100%;
+    }
+}
+
+  /*==================*/
+/*Max-width of 320px*/
+@media (max-width: 425px) {
+    body {
+        width: 100%;
+    }
+
+.logo-text {
+    font-size: 18px;
+}
+    .content p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+}

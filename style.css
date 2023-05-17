@@ -55,6 +55,14 @@ body {
   color: #005A9B;
 }
 
+.menu ul li a:hover{
+    background-color:burlywood;
+    padding: 10px;
+    color:black;
+    border-radius: 10px;
+
+}
+
 /*MENU BUTTON*/
 
 .menu-btn {
@@ -77,12 +85,21 @@ body {
     cursor: pointer;
 }
 
+
+
 .signin-btn a {
     text-decoration: none;
     color: #005A9B;
     font-style: normal;
 }
+.signin-btn a:hover{
+    background-color:burlywood;
+    padding: 10px;
+    color:black;
+    border-radius: 10px;
 
+
+}
 .register-btn button {
     width: 168px;
     height: 56px;
@@ -90,14 +107,25 @@ body {
     border-radius: 8px;
     cursor: pointer;
     border: none;
+    color: black;
 }
 
 .register-btn a{
-    color: white;
+    /* color: white; */
     text-decoration: none;
     font-size: 16px;
 }
 
+.register-btn button:hover{
+    background-color:burlywood;
+    padding: 10px;
+    color:black;
+}
+.register-btn a:hover{
+    background-color:burlywood;
+    /* padding: 10px; */
+    color:black;
+}
 /*CONTENT*/
 
 .hero-content {
@@ -166,4 +194,9 @@ body {
     font-size: 16px;
 }
 
-
+.thepolicy{
+    text-decoration: none;
+}
+.thepolicy:visited{
+    color: white;
+}

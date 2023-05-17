@@ -161,3 +161,20 @@ header h1 {
     width: 300px;
   }
 }
+
+.termsservice{
+  text-decoration: none;
+  color: #005a9b;
+}
+.termsservice:visited{
+  color: white;
+  color: #005a9b;
+
+}
+.privacy-policy{
+    text-decoration: none;
+}
+.privacy-policy:visited{
+    color: white;
+}
+

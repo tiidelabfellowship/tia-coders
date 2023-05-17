@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600&family=Patua+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: white;
+}
+
+/* header Logo section */
+
+.logo-text h2{
+    color: #005A9B;
+    font-size: 24px;
+    padding: 40px 86px;
+    font-weight: 600;
+}
+
+.privacy {
+    padding: 30px 86px;
+    /* text-align: center; */
+}
+
+.privacy h3 {
+    color: #005A9B;
+    padding-bottom: 20px;
+}
+
+.privacy p {
+    font-size: 12px;
+    color:  #414141;
+    font-weight: 400;
+    padding-bottom 40px;
+}
+
+
+/* Contents Body */
+.contents {
+    padding: 0 86px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contents p{
+    font-size: 14px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 92px 30px 0px;
+}
+
+.content-left {
+    width: 460px;
+    /* background: red; */
+    color: #000000;
+    line-height: 30px;
+    font-size 30px;
+}
+
+.content-right {
+    /* background: yellow; */
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #414141;
+    padding-left: 20px;
+    width: 1700px;
+}
+
+.content-left h4 {
+    font-size: 18px;
+}
+
+.content-right p {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+
+/* footer - copyright */
+
+.copyright {
+    height:40px;
+    text-align: center;
+    background: #005A9B;
+    color: white;
+    width: 100%;
+    padding: 0;
+    
+}
+
+.copyright p {
+    padding-top: 12px;
+    font-size: 14px;
+}
+
+
+
+/* MEDIA QURRY */
+
+/* max-width of 1024px */
+@media (max-width: 1024px) {
+    .contents {
+        padding-right: 40px;
+    }
+
+}
+
+
+/* max-width of 768px */
+    @media (max-width: 768px) {
+        .contents {
+            padding-right: 20px;
+        }
+
+        .content-right {
+            padding-right 30px;
+        }
+
+        .content-left {
+            width: 500px;
+            font-size: 20px;
+        }
+}
+
+
+/* max-width of 425px */
+@media (max-width: 425px) {
+    .logo-text h2{
+        font-size: 20px;
+        padding: 20px 30px;
+    }
+    
+    .privacy {
+        padding: 30px 30px;
+}
+
+.contents {
+    padding: 0 30px;
+}
+.content {
+    padding: 20px 0px;
+}
+
+.content-left {
+    padding-right: 10px;
+}
+
+.content-right {
+    padding: px 10px;
+}
+}
+
