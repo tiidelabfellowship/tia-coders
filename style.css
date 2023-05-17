@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600&family=Patua+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+body {
+    background-color: black;
+}
+
+#confirm {
+    font-family: 'Kumbh Sans';
+    max-width: 1234px;
+    margin: auto;
+    background-color: white;
+}
+
+#confirm .top img {
+    position: relative;
+    padding: 0;
+}
+
+#confirm img {
+    padding: 3.725rem 4rem;
+}
+
+#confirm h2 {
+    color: #005A9B;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+}
+
+.body {
+    padding: 5.4rem 3.5rem 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.body .details {
+    color: white;
+    background-color: #005A9B;
+}
+
+.body .details h3 {
+    padding: 0.5rem 1rem;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.body .details .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem 5.5rem;
+}
+
+.body .details .equipment {
+    padding-right: 20vw;
+}
+
+.body .details .service {
+    padding-right: 30vw;
+}
+
+
+.body .details .content .info {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1.5rem;
+}
+
+.body .details p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.button {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 2.5rem;
+    padding-bottom: 5rem;
+}
+
+.button button {
+    padding: 0.8rem 4.5rem;
+    font-size: 20px;
+    color: #005A9B;
+    border: 0.5px solid #414141;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.button .btn {
+    padding:  0.5rem 1rem;
+    background-color: #005A9B;
+    color: white;
+    border: none;
+}
+
+@media (min-width:290px) and (max-width:768px) {
+    #confirm img {
+        padding: 0.725rem 1rem;
+        width: 10rem;
+    }
+
+    #confirm h2 {
+        font-size: 23px;
+        line-height: 25px;
+        text-align: left;
+        padding-left: 5vw;
+    }
+
+    .body {
+        padding: 5vw;
+    }
+    
+    .body .details h3 {
+        padding: 0.5rem;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+
+    .body .details .content {
+        /* display: block; */
+        padding: 0.5rem;
+        padding-bottom: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 1.5rem;
+    }
+
+    .body .details .content .info {
+        flex-direction: row;
+        gap: 1.0rem;
+    }
+
+    .body .details p {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+    }
+
+    .button {
+        padding: 2rem 0;
+        gap: 1rem;
+    }
+
+    .button button {
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    #confirm h2 span {
+        display: none;
+    }
+}
