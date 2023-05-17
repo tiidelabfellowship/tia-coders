@@ -75,6 +75,7 @@ body {
     width: 168px;
     height: 56px;
     cursor: pointer;
+    transition: all 0.2s linear;
 }
 
 .signin-btn a {
@@ -90,12 +91,22 @@ body {
     border-radius: 8px;
     cursor: pointer;
     border: none;
+    transition: all 0.5s linear;
 }
 
 .register-btn a{
     color: white;
     text-decoration: none;
     font-size: 16px;
+}
+
+.register-btn button:hover {
+    background: #414141;
+}
+
+.signin-btn button a:hover {
+    color: #414141;
+    font-size: 20px;
 }
 
 /*CONTENT*/
@@ -143,6 +154,12 @@ body {
     background: none;
     border: 2px solid #005A9B;
     border-radius: 8px;
+    transition: all 0.5s linear;
+}
+
+.book-btn button:hover {
+    border: 2px solid #414141;
+    color: #414141;
 }
 
 .book-btn a{
@@ -151,16 +168,30 @@ body {
     font-size: 16px;
 }
 
+.book-btn a:hover{
+    color: #414141;
+    font-size: 20px;
+}
+
 .rsvp-btn button{
     width: 168px;
     height: 56px;
     background: #005A9B;
     border-radius: 8px;
     border: none;
+    transition: all 0.5s linear;
 }
 
 .rsvp-btn a{
     text-decoration: none;
     color: white;
     font-size: 16px;
+}
+
+.rsvp-btn button:hover {
+    background: #414141;
+}
+
+.rsvp-btn a:hover {
+    font-size: 20px;
 }

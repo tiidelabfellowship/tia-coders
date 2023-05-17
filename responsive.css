@@ -162,43 +162,64 @@
 @media (max-width: 425px) {
 
     .header {
-        width: 100%;
+        width: 370px;
     }
+
     .bookmyevent-logo {
-        left: 20px;
+        left: 16px;
+        font-size: 14px;
     }
 
     .menu {
-      width: 100%;
+      width: 350px;
       display: flex;
       flex-direction: column;
       margin-right: 0;
+      padding-top: 20px;
     }
 
     .menu ul {
         display: flex;
         flex-direction: column;
         margin-right: 0;
+        padding-left: 50px;
+        font-size: 14px;
     }
 
-    .menu-btn {
+    
+/* signin-btn */
 
+    .signin-btn button {
+        font-size: 14px;
+        width: 80px;
+        height: 36px;
+        padding-right: 30px;
     }
 
+    /* register-btn */
 
+.register-btn button {
+        font-size: 14px;
+        width: 100px;
+        height: 36px;
+}
 
 
     /*hero section*/
     .hero-content {
-    padding: 80px 70px;
+    padding: 30px 10px;
+    width: 350px;
+   
 }
 
 .content h2 {
-    line-height: 60px;
+    line-height: 40px;
+    font-size: 25px;
 }
 
 .content p {
-    font-size: 16px;
+    font-size: 12px;
+    line-height: 25px;
 }
 
 .toggle button {
@@ -211,9 +232,27 @@
 }
 
 
-/*Max-width of 375px*/
-@media (max-width: 375px) {
+/*Max-width of 320px*/
+@media (max-width: 320px) {
+
+    .header {
+        width: 300px;
+        padding-top: 30px;
+    }
+
+    .bookmyevent-logo {
+        left: 12px;
+        font-size: 12px;
+    }
+
+    .menu {
+      width: 300px;
+      margin-right: 0;
+      padding-top: 20px;
+    }
+
       .hero-content {
-    padding: 50px 50px;
+    padding: 40px 30px;
+    width: 310px;
 } 
 }
