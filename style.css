@@ -221,7 +221,18 @@ body {
 }
 .thepolicy{
     text-decoration: none;
+    color:white;
+}
+
+.about-us{
+    color:white;
+    text-decoration: none;
+}
+
+#about-us:visited{
+    color: white;
 }
 .thepolicy:visited{
     color: white;
+    
 }
