@@ -107,13 +107,13 @@ body {
     border-radius: 8px;
     cursor: pointer;
     border: none;
-    color: white;
 }
 
-.register-btn a{
+.register-btn a {
     /* color: white; */
     text-decoration: none;
     font-size: 16px;
+    color: #ffffff;
 }
 
 .register-btn button:hover{
@@ -130,10 +130,9 @@ body {
 
 .hero-content {
     background-image: url(./Image/background-img.png);
-    background-repeat:repeat;
-    height: 50px;
+    background-repeat:no-repeat;
     text-align: center;
-    padding: 50px 268px;
+    padding: 130px 268px;
 }
 
 .content h2 {
@@ -173,23 +172,11 @@ body {
     border: 2px solid #005A9B;
     border-radius: 8px;
 }
-.book-btn button:hover{
-    background-color:burlywood;
-    padding: 10px;
-    color:#005A9B;
-    border-radius: 10px;
-    border:none;
 
-}
 .book-btn a{
     text-decoration: none;
     color: #005A9B;
     font-size: 16px;
-}
-
-.book-btn a:hover{
-    background-color:burlywood;
-    color:#005A9B;
 }
 
 .rsvp-btn button{
@@ -198,10 +185,35 @@ body {
     background: #005A9B;
     border-radius: 8px;
     border: none;
+}
+
+.rsvp-btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.thepolicy{
+    text-decoration: none;
+}
+.thepolicy:visited{
+    color: white;
+}
+
+
+.book-btn button:hover{
+    background-color:burlywood;
+    padding: 10px;
     color:#005A9B;
+    border-radius: 10px;
+    border:none;
 
 }
 
+.book-btn a:hover{
+    background-color:burlywood;
+    color:#005A9B;
+}
 
 .rsvp-btn button:hover{
     background-color:burlywood;
@@ -209,19 +221,23 @@ body {
     color:#005A9B;
     border-radius: 10px;
 }
-.rsvp-btn a{
-    text-decoration: none;
-    color: #005A9B;
-    font-size: 16px;
-}
 .rsvp-btn a:hover{
     background-color:burlywood;
     padding: 10px;
     color:#005A9B;
 }
-.thepolicy{
-    text-decoration: none;
+
+.btnme:hover{
+    background-color:burlywood;
+    padding: 30px;
+    color:#005A9B;
+    border-radius: 10px;
 }
-.thepolicy:visited{
-    color: white;
+
+.btn{
+    background-color:burlywood;
+    padding: 30px;
+    color:#005A9B;
+    border-radius: 10px;
+
 }

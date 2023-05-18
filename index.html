@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="/responsive.css" />
-    <link rel="stylesheet" href="assets\css\style.css">
-    <link rel="stylesheet" href="features\style.css">
-    <link rel="stylesheet" href="footer_css\style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-Misi+Y+g7v0kAHD+dpNak1jDA4hm7xVdYZko0T3T2MyYO7w0IzCHXP8Q6MyStcy0" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./landing page/home/style.css" />
+    <link rel="stylesheet" href="./landing page/home/responsive.css" />
+    <link rel="stylesheet" href="./landing page/features/style.css">
+    <link rel="stylesheet" href="./landing page/contact/css/style.css">
+    <link rel="stylesheet" href="./landing page/footer/style.css">
 
 
     <!-- <title>BOOKMYEVENT TIA CODERS TEAM PROJECT | TIIDELab</title> -->
@@ -21,29 +24,29 @@
         <h2>BookMyEvent</h2>  
       </div>
 
-      <div class="Navbar__Link Navbar__Link-toggle">
+      <!-- <div class="Navbar__Link Navbar__Link-toggle">
         <i class="fas fa-bars"></i>
-      </div>
+      </div> -->
 
       <div class="menu">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#ourfeatures">Features</a></li>
-          <li><a href="./Pricing-Page/pricing-page.html">Pricing</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a class="home" href="#">Home</a></li>
+          <li><a class="features" href="#ourfeatures">Features</a></li>
+          <li><a class="pricing" href="./Pricing-page/pricing-page.html">Pricing</a></li>
+          <li><a class="contact" href="#contact">Contact Us</a></li>
         </ul>
       </div>
       <!-- MENU BUTTON-->
       <div class="menu-btn">
         <div class="signin-btn">
           <button>
-            <a href="/login page/index.html">Sign In</a>
+            <a href="./login page/index.html">Sign In</a>
           </button>
         </div>
 
         <div class="register-btn">
           <button>
-            <a href="/SignUp/signup.html">Register</a>
+            <a href="./SignUp/signup.html">Register</a>
           </button>
         </div>
       </div>
@@ -64,15 +67,15 @@
 
       <div class="section-btn">
         <div class="book-btn">
-          <button><a href="/Booking Page/index.html">Book an Event</a></button>
+          <button><a href="./BookingPage/index.html">Book an Event</a></button>
         </div>
         <div class="rsvp-btn">
-          <button><a href="/RSVP/index.html">R.S.V.P</a></button>
+          <button><a href="./RSVP/index.html">R.S.V.P</a></button>
         </div>
       </div>
     </div>
 
-    <script src="main.js"></script>
+    
     <main>
       <!-- feature section -->
       <section class="features" id="ourfeatures">
@@ -112,26 +115,30 @@
         
       </div>
       </section>
-      <section id="contact">
-        <img src="assets/images/Rectangle 10.png" alt="">
-        <div class="contact-info">
-            <div class="contact-fact">
-                <h2>We are here to <span>help</span> you, whatever you need</h2>
-                <p>We are itching to attend to any issues you might have regarding any of our services. You could even decide to reach us if you get a bit lonely and need to unwind</p>
-            </div>
+    <!------------ Contact Section of Landing Page ------------>
 
-            <!------------ Contact Form  ------------>
-            <form action="">
-                <label for="name">Name</label><br>
-                <input type="text" name="name" id="name" placeholder="Enter your name"><br>
-                <label for="email">Email</label><br>
-                <input type="text" name="email" id="email" placeholder="Enter your email"><br>
-                <label for="message">Message</label><br>
-                <textarea name="message" id="message" placeholder="Enter your message" cols="30" rows="5"></textarea>
-                <button class="btn">Send <span>Message</span></button>
-            </form>
-        </div>
-    </section>
+    <section id="contact">
+      <h2 class="contact-title">Contact Us</h2>
+      <img src="./landing page/contact/image/Rectangle 10.png" alt="">
+      <div class="contact-info">
+          <div class="contact-fact">
+              <h2>We are here to <span>help</span> you, whatever you need</h2>
+              <p>We are itching to attend to any issues you might have regarding any of our services. You could even decide to reach us if you get a bit lonely and need to unwind</p>
+          </div>
+
+          <!------------ Contact Form  ------------>
+          <form action="">
+              <label for="name">Name</label><br>
+              <input type="text" name="name" id="name" placeholder="Enter your name"><br>
+              <label for="email">Email</label><br>
+              <input type="text" name="email" id="email" placeholder="Enter your email"><br>
+              <label for="message">Message</label><br>
+              <textarea name="message" id="message" placeholder="Enter your message" cols="30" rows="5"></textarea>
+              <button class="btn">Send <span> Message</span></button>
+          </form>
+      </div>
+  </section>
+
     <section>
       <!------------footer---------->
       <footer>
@@ -153,8 +160,8 @@
   
             <div id="third-item">
               <h2 class="first-item-text">Help</h2>
-              <h2 class="second-item-text">Contat Us</h2>
-              <h2 class="second-item-text"><a href="/privacy-policy/index.html" class="thepolicy">Privacy Policy</a></h2>
+              <h2 class="second-item-text"><a href="#contact"></a>Contact Us</h2>
+              <h2 class="second-item-text"><a href="./privacy-policy/index.html" class="thepolicy">Privacy Policy</a></h2>
               <h2 class="second-item-text">FAQ</h2>
             </div>
             <div id="fourth-item">
@@ -202,11 +209,11 @@
             <div class="subscribe">
               <div>
                 <label class="subscribe-label" for="text"> Subscribe to our Newsletter </label>
-                <img src="./images/Vector9.svg" alt="" />
+                <img src="./landing page/footer/image/Vector10.svg" alt="" />
               </div>
               <div>
                 <input class="subscribe-input" type="email" placeholder="Enter your email" />
-              <button type="submit" class="btn">Submit</button>
+              <button type="submit" class="btnme">Submit</button>
               </div>
             </div>
             
@@ -217,5 +224,6 @@
       </footer>
     </section>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>

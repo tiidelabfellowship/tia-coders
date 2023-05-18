@@ -20,16 +20,15 @@
       <!-- Nav Section -->
       <nav class="nav">
         <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact us</a></li>
+          <li><a href="/index.html" class="all-links">Home</a></li>
         </ul>
       </nav>
       <!-- Sign In and Register Section -->
       <div class="sign-in">
-        <a href="#">Sign In</a>
-        <button class="btn btn-dark">Register</button>
+        <a href="/login page/index.html" class="all-links">Sign In</a>
+        <button class="btn btn-dark all-buttons">
+          <a href="/SignUp/signup.html" class="btn-register all-links-button">Register</a>
+        </button>
       </div>
     </header>
     <!--End of Header Section -->
@@ -39,7 +38,7 @@
       <div class="price-cards container">
         <!-- Pricing Header -->
         <div class="pricing-header">
-            <h2>Pricing</h2>
+          <h2>Pricing</h2>
         </div>
         <!-- Pricing Cards -->
         <div class="cards">
@@ -47,34 +46,36 @@
           <div class="card">
             <div class="card-img">
               <h3>Halls</h3>
-              <img src="images/Goldstar.svg" alt="" />
+              <div class="halls">
+                <img id="halls" src="images/Goldstar.svg" alt="" />
+              </div>
             </div>
             <div class="card-content">
-              <h2>Gold Star hall</h2>
+              <h2 id="hall-header">Gold Star hall</h2>
               <p>Here is a description of this event category</p>
               <div class="pricing-info">
                 <!-- Status -->
                 <div class="status">
-                  <h3>STATUS</h3>
-                  <p>Available</p>
+                  <h3 id="hall-status-h3">STATUS</h3>
+                  <p id="hall-status-p">Available</p>
                 </div>
                 <!-- Payment -->
                 <div class="payment-status">
-                  <h3>PAYMENT</h3>
-                  <p>30% Advance</p>
+                  <h3 id="hall-payment-h3">PAYMENT</h3>
+                  <p id="hall-payment-p">30% Advance</p>
                 </div>
                 <!-- Capacity -->
                 <div class="capacity">
-                  <h3>CAPACITY</h3>
-                  <p>300 seats</p>
+                  <h3 id="hall-capacity-h3">CAPACITY</h3>
+                  <p id="hall-capacity-p">300 seats</p>
                 </div>
               </div>
               <!-- Card Button  -->
-              <button class="btn btn-light">Book now</button>
+              <button class="btn btn-light  all-buttons">Book now</button>
             </div>
             <!-- slide-btn -->
-            <div class="slide-btn">
-                <img src="./images/Vector.svg" alt="">
+            <div class="slide-btn ">
+              <img id="hallBtn" src="./images/Vector.svg" alt="" class="all-buttons" />
             </div>
           </div>
 
@@ -83,10 +84,12 @@
           <div class="card">
             <div class="card-img">
               <h3>Decorations</h3>
-              <img src="images/glod star deco.svg" alt="" />
+              <div class="deco">
+                <img id="deco" src="images/glod star deco.svg" alt="" />
+              </div>
             </div>
             <div class="card-content">
-              <h2>Gold Star Decorations</h2>
+              <h2 id="deco-header">Gold Star Decorations</h2>
               <p>Here is a description of this event category</p>
               <div class="pricing-info">
                 <!-- Status -->
@@ -106,25 +109,25 @@
                 </div>
               </div>
               <!-- Card Button  -->
-              <button class="btn btn-light">Book now</button>
+              <button class="btn btn-light all-buttons">Book now</button>
             </div>
-             <!-- slide-btn -->
-             <div class="slide-btn">
-                <img src="./images/Vector.svg" alt="">
+            <!-- slide-btn -->
+            <div class="slide-btn ">
+              <img id="decoBtn" src="./images/Vector.svg" alt="" class="all-buttons" />
             </div>
           </div>
-
 
           <!-- Card 3 -->
 
-
           <div class="card">
             <div class="card-img">
-                <h3>Tables and chairs</h3>
-              <img src="images/queen colby.svg" alt="" />
+              <h3>Tables and chairs</h3>
+              <div class="tc">
+                <img id="tc" src="images/queen colby.svg" alt="" />
+              </div>
             </div>
             <div class="card-content">
-              <h2>Queen colby Tables and chairs</h2>
+              <h2 id="tc-header">Queen colby Tables and chairs</h2>
               <p>Here is a description of this event category</p>
               <div class="pricing-info">
                 <!-- Status -->
@@ -144,23 +147,24 @@
                 </div>
               </div>
               <!-- Card Button  -->
-              <button class="btn btn-light">Book now</button>
+              <button class="btn btn-light all-buttons">Book now</button>
             </div>
-             <!-- slide-btn -->
-             <div class="slide-btn">
-                <img src="./images/Vector.svg" alt="">
+            <!-- slide-btn -->
+            <div class="slide-btn all">
+              <img id="tcBtn" src="./images/Vector.svg" alt="" class="all-buttons" />
             </div>
           </div>
-
 
           <!-- Card 4 -->
           <div class="card">
             <div class="card-img">
-                <h3>Tents</h3>
-              <img src="images/Averino tent.svg" alt="" />
+              <h3>Tents</h3>
+              <div class="tents">
+                <img id="tents" src="images/Averino tent.svg" alt="" />
+              </div>
             </div>
             <div class="card-content">
-              <h2>Averino Tent</h2>
+              <h2 id="tents-header">Averino Tent</h2>
               <p>Here is a description of this event category</p>
               <div class="pricing-info">
                 <!-- Status -->
@@ -180,11 +184,11 @@
                 </div>
               </div>
               <!-- Card Button  -->
-              <button class="btn btn-light">Book now</button>
+              <button class="btn btn-light all-buttons">Book now</button>
             </div>
-             <!-- slide-btn -->
-             <div class="slide-btn">
-                <img src="./images/Vector.svg" alt="">
+            <!-- slide-btn -->
+            <div class="slide-btn">
+              <img id="tentsBtn" src="./images/Vector.svg" alt=""class="all-buttons"  />
             </div>
           </div>
         </div>
@@ -192,7 +196,7 @@
     </section>
     <!-- Footer section -->
     <footer>
-        <p>Copyright &copy BookMyevent 2023</p>
+      <p>Copyright &copy BookMyevent 2023</p>
     </footer>
     <!-- End of Pricing Section -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>

@@ -26,74 +26,64 @@
           <div class="form-header">
             <h1>Sign up</h1>
           </div>
-          <div class="form-container">
-            <input
-              type="name"
-              name="firstname"
-              id="Fname"
-              placeholder="First Name"
-              required
-            />
-            <input
-              type="name"
-              name="lastname"
-              id="Lname"
-              placeholder="Last Name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email Address"
-              required
-            />
-
-            <div class="password">
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="password"
-                required
-              />
-              <i
-                class="fa-sharp fa-regular fa-eye-slash"
-                style="color: rgba(28, 27, 31, 0.6)"
-              ></i>
+          <!-- Form Container -->
+          <form id="form" class="form">
+            <!-- first name form Control -->
+            <div class="form-control">
+              <input type="text" id="username" placeholder="First Name" />
+              <small>Error message</small>
             </div>
-
-            <div class="password">
+            <!-- last name form Control -->
+            <div class="form-control">
+              <input type="text" id="lastname" placeholder="Last Name" />
+              <small>Error message</small>
+            </div>
+            <!-- Email form Control -->
+            <div class="form-control">
+              <input type="text" id="email" placeholder="Email Address" />
+              <small>Error message</small>
+            </div>
+            <!-- Password form Control -->
+            <div class="form-control">
+              <input type="password" id="password" placeholder="Password" />
+              <i
+                class="fa-sharp fa-regular fa-eye-slash"
+                style="color: rgba(28, 27, 31, 0.6)"
+              ></i>
+              <small>Error message</small>
+            </div>
+            <!-- Confirm Password form Control -->
+            <div class="form-control">
               <input
                 type="password"
-                name="password"
-                id="password"
+                id="password2"
                 placeholder="Confirm password"
-                required
               />
               <i
                 class="fa-sharp fa-regular fa-eye-slash"
                 style="color: rgba(28, 27, 31, 0.6)"
               ></i>
+              <small>Error message</small>
             </div>
             <!-- Agreement -->
             <div class="agreement">
               <p>
                 By selecting "Agree and Sign up" I agree to the
                 <span>BookMyEvent <a href="/terms-of-service/index.html" class="termsservice">Terms of service.</a></span> Learn about how we use and
-                protect your data in our <span> <a href="/privacy-policy/index.html" class="privacy-policy">Privacy Policy</a></span>
+                protect your data in our <span><a href="/privacy-policy/index.html" class="privacy-policy">Privacy Policy</a></span>
               </p>
             </div>
-            
             <div class="btn">
-              <button class="btn-dark"><a href="/Dashboard/index.html" class="dashboard">Agree and Sign Up</a></button>
+              <button type="submit"><a href="/Dashboard/index.html" class="dashboard">Agree and Sign Up</a></button>
               <div class="login">
-               <h4> Already have an account  <a href="/login page/index.html">Log in</span></a></h4>
+                <br>
+                <a href="#"> Already have an account?  <span> Log in</span></a>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </section>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

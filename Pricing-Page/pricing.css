@@ -32,7 +32,6 @@ a {
   border-radius: 8px;
   font-size: 16px;
   text-align: center;
-  
 }
 .btn-dark {
   width: 168px;
@@ -46,6 +45,9 @@ a {
   color: var(--font-white);
   width: 150px;
   height: 50px;
+}
+.btn-register {
+  color: var(--font-white);
 }
 /* Container*************************************** */
 .container {
@@ -61,7 +63,7 @@ header .logo {
   gap: 7rem;
   align-items: center;
   font-weight: 600;
-  width: 100%;
+  width: 50%;
 }
 header .logo h1 {
   color: var(--font-color-secondary);
@@ -72,11 +74,11 @@ header .logo .menu-bar {
 }
 header .nav {
   height: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: var(--transition);
 }
 header .nav.show-links {
-  height: 10rem;
+  height: 3rem;
   margin-top: 3%;
 }
 
@@ -120,11 +122,13 @@ header .sign-in a {
   line-height: 64px;
   color: var(--font-color-secondary);
 }
+
 #price-cards .price-cards .cards .card .card-img img {
   width: 100%;
 }
 #price-cards .price-cards .cards .card .slide-btn {
   display: none;
+  cursor: pointer;
 }
 #price-cards .price-cards .cards .card .card-content {
   width: 100%;
@@ -150,6 +154,7 @@ header .sign-in a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 5rem;
 }
 
 #price-cards .price-cards .cards .card .card-content .pricing-info h3 {
@@ -181,8 +186,7 @@ footer p {
     width: 100vw;
   }
   header .logo {
-    gap: 0;
-    width: 250px;
+    gap: 0rem;
   }
   header .logo h1 {
     font-size: 40px;
@@ -225,9 +229,10 @@ footer p {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    gap: 5rem;
   }
-  #price-cards .price-cards .cards .card .card-img img {
-    width: 80%;
+  #price-cards .price-cards .cards .card .card-content p{
+    font-size: 16px;
   }
   #price-cards .price-cards .cards .card .card-content .pricing-info .status,
   #price-cards
@@ -238,7 +243,7 @@ footer p {
     .pricing-info
     .payment-status,
   #price-cards .price-cards .cards .card .card-content .pricing-info .capacity {
-    width: 250px;
+    width: 300px;
   }
   #price-cards .price-cards .cards .card .card-img h3 {
     font-size: 30px;
@@ -270,4 +275,37 @@ footer p {
   .price-cards {
     max-width: 1330px;
   }
+  header .logo {
+    width: 50%;
+  }
+  header .nav {
+    width: 20%;
+  }
+  header .sign-in {
+    width: 25%;
+  }
+
+}
+
+
+.all-buttons:hover{
+    background-color:burlywood;
+    padding: 10px;
+    color:#005A9B;
+    border-radius: 10px;
+    border:none;
+
+}
+.all-links-button:hover{
+  color:#005A9B;
+
+}
+.all-links:hover{
+    background-color:burlywood;
+    padding: 10px;
+    color:#005A9B;
+    border-radius: 10px;
+
+    border:none;
+
 }

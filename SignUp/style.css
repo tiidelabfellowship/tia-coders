@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Lato:wght@300&family=League+Gothic&family=Lora&family=Montserrat:wght@400;500;600&family=Patua+One&family=Poppins&display=swap");
+
+:root {
+  --success-color: green;
+  --error-color: red;
+}
+
 *,
 *::before,
 *::after {
@@ -19,38 +25,34 @@ header h1 {
   padding-top: 10px;
   font-family: "Patua One";
   font-weight: 700;
-  font-size: 32px;
+  font-size: 40px;
   color: #005a9b;
 }
 .container {
   margin: 0 auto;
   max-width: 1500px;
-  padding: 20px;
-}
-#signup {
-  margin: 5% auto 0 auto;
+  padding: 20px;;
 }
 #signup .signup {
   width: 85vw;
-  height: 95vh;
+  height: 84vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 3% auto 0 auto;
-  animation: slideInFromBottom 1s ease-in;
+  margin: 1% auto 0 auto;
 }
 
 /* Form Section *******************************************888*/
 #signup .signup .form-header h1 {
   font-family: "Patua One";
   font-weight: 400;
-  font-size: 32px;
+  font-size: 40px;
   text-align: center;
   color: #333333;
-  padding-bottom: 3%;
+  padding-bottom: 20px;
 }
-#signup .signup .form-container {
+#signup .signup .form {
   font-family: "Kumbh Sans";
   display: flex;
   justify-content: center;
@@ -60,14 +62,13 @@ header h1 {
   padding-bottom: 20px;
 }
 
-#signup .signup .form-container input {
+#signup .signup .form-control input {
   outline: none;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   padding: 16px 24px;
   width: 546px;
-  height: 64px;
+  height: 55px;
   font-family: "Kumbh Sans";
   font-style: normal;
   font-weight: 500;
@@ -75,13 +76,15 @@ header h1 {
   line-height: 22px;
   color: rgba(51, 51, 51, 0.6);
 }
-
-#signup .signup .password {
+.form-control {
+  position: relative;
+}
+#signup .signup #password {
   margin-top: 2%;
 }
-#signup .signup .btn button {
+button {
   width: 546px;
-  height: 64px;
+  height: 50px;
   outline: none;
   border: none;
   background: #005a9b;
@@ -99,13 +102,13 @@ header h1 {
 }
 
 /* Password section************************************** */
-.password {
+#password {
   position: relative;
 }
-.password i {
+i {
   position: absolute;
   right: 5%;
-  top: 35%;
+  top: 40%;
   cursor: pointer;
 }
 .login {
@@ -115,28 +118,39 @@ header h1 {
   width: 500px;
   padding: 0 20px;
 }
+/* Error signals***************************************** */
+/* .form-control.success input {
+  border-color: var(--success-color);
+} */
 
-/* Key Frames ******************************************** */
-@keyframes slideInFromBottom {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: -25%;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
 }
 
 /* Media Queries ******************************************** */
 
 @media (max-width: 700px) {
-  #signup .signup .form-container input {
+  #signup .signup .form-control input {
     width: 400px;
   }
-  #signup .signup .btn button {
+  button {
     width: 400px;
   }
 }
 @media screen and (max-width: 425px) {
+  
   header h1 {
     padding: 20px;
     font-size: 40px;
@@ -146,13 +160,13 @@ header h1 {
     animation: slideInFromBottom 1s ease-in;
     box-shadow: none;
   }
-  #signup .signup .form-container input {
+  #signup .signup .form-control input {
     padding: 16px 20px;
     width: 280px;
     height: 60px;
     font-size: 16px;
   }
-  #signup .signup .btn button {
+  button {
     width: 280px;
     height: 60px;
     font-size: 16px;
@@ -177,4 +191,6 @@ header h1 {
 .privacy-policy:visited{
     color: white;
 }
-
+.dashboard{
+  color:white;
+}
