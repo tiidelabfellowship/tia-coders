@@ -61,7 +61,7 @@ body {
 }
 
 form {
-    display: inline-flex;
+    /* display: inline-flex; */
     flex-direction: column;
     width: 472px;
     /* align-items: center; */

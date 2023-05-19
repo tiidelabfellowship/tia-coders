@@ -200,6 +200,10 @@ body {
     color: white;
 }
 
+.logo-link{
+    text-decoration: none;
+    color: #005A9B;
+}
 
 .book-btn button:hover{
     background-color:burlywood;

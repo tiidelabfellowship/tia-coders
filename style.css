@@ -13,6 +13,11 @@ body {
 
 /* NAV BAR */
 
+.logo-link{
+    text-decoration: none;
+    color: #005A9B;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -235,4 +240,11 @@ body {
 .thepolicy:visited{
     color: white;
     
+}
+
+
+.btnme:hover{
+    background-color:burlywood;
+    padding: 10px;
+    color:#005A9B;
 }
